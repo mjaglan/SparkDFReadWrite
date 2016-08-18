@@ -1,0 +1,6 @@
+{
+	"write" : "false",
+	"sparkArgsFileName" : "./resources/main/sparkArgs.json",
+	"dbArgsFileName" : "./resources/main/dbArgs.json",
+	"query" : "bad query"
+}

@@ -1,0 +1,8 @@
+{
+	"username"   : "mysql.username",
+	"password"   : "mysql.passowrd",
+	"sourcetype" : "mysql",
+	"hostname"   : "localhost",
+	"hostport"   : "3306",
+	"dbname"     : "mysql.user.database.name"
+}

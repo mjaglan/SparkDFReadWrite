@@ -1,0 +1,6 @@
+{
+	"write" : "true",
+	"sparkArgsFileName" : "./resources/main/sparkArgs.json",
+	"dbArgsFileName" : "./resources/main/dbArgs.json",
+	"tableName" : "bad table name"
+}

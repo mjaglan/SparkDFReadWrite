@@ -1,0 +1,6 @@
+{
+	"appname"    : "app-name",
+	"masternode" : "local[*]",
+	"setprops-key-1"   : "spark.driver.allowMultipleContexts",
+	"setprops-val-1"   : "false"
+}

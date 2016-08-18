@@ -1,0 +1,7 @@
+{
+	"write" : "true",
+	"sparkArgsFileName" : "./resources/main/sparkArgs.json",
+	"dbArgsFileName" : "./resources/main/dbArgs.json",
+	"tableName" : "Persons",
+	"query" : "Select * from Persons"
+}

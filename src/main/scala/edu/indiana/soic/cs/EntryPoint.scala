@@ -14,7 +14,7 @@ object EntryPoint extends App {
   Logger.getLogger("akka").setLevel(Level.ERROR)
 
   // override input args
-  var inputFileName = "./input.json"
+  var inputFileName = "./resources/main/input.json"
   if (args.length == 1) {
     inputFileName = args(0)
   }
@@ -48,7 +48,7 @@ object EntryPoint extends App {
   // if (write): writeDF
   if (inputMap.get("write").get == "true") {
     // Make DataFrame
-    val df = ses.makeDataframeFromJSON(ssc, "./test1.json")
+    val df = ses.makeDataframeFromJSON(ssc, "./resources/main/record.json")
     
     val feedBack = sqlC.writeDF(ssc, mysqlProp, df, inputMap.get("tableName").get)
     

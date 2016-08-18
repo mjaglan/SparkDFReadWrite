@@ -6,7 +6,7 @@ import edu.indiana.soic.cs.model._
 
 
 class MyUtilsImpl extends MyUtils {
-  def getSparkArgs(fileName:String = "./sparkArgs.json"): SparkConfProps = {
+  def getSparkArgs(fileName:String = "./resources/main/sparkArgs.json"): SparkConfProps = {
       val dbArgsJsonString = Source.fromFile(fileName).getLines().mkString
       val imap = JsonUtil.fromJson[scala.collection.mutable.Map[String,Any]](dbArgsJsonString)
       
@@ -22,7 +22,7 @@ class MyUtilsImpl extends MyUtils {
       sparkConfProps
   }
   
-  def getMySQLArgs(fileName:String = "./dbArgs.json"): MySQLProps = {
+  def getMySQLArgs(fileName:String = "./resources/main/dbArgs.json"): MySQLProps = {
       val dbArgsJsonString = Source.fromFile(fileName).getLines().mkString
       val imap = JsonUtil.fromJson[scala.collection.mutable.Map[String,String]](dbArgsJsonString)
       
@@ -38,7 +38,7 @@ class MyUtilsImpl extends MyUtils {
       mysqlProps
   }
   
-  def getInputArgs(fileName:String = "./input.json"):  Map[String, String] = {
+  def getInputArgs(fileName:String = "./resources/main/input.json"):  Map[String, String] = {
       val dbArgsJsonString = Source.fromFile(fileName).getLines().mkString
       val imap = JsonUtil.fromJson[scala.collection.mutable.Map[String,String]](dbArgsJsonString)
       imap

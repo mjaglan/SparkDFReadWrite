@@ -12,7 +12,7 @@ class EntryPointTest extends FunSuite {
   test("EntryPoint method - write") {
     var isOk = false
     try {
-      EntryPoint.main(Array("./testInput1.json"))
+      EntryPoint.main(Array("./resources/test/testInput1.json"))
       isOk = true
     } catch {
         case e: Exception => {
@@ -25,7 +25,7 @@ class EntryPointTest extends FunSuite {
   test("EntryPoint method - read") {
     var isOk = false
     try {
-      EntryPoint.main(Array("./testInput2.json"))
+      EntryPoint.main(Array("./resources/test/testInput2.json"))
       isOk = true
     } catch {
         case e: Exception => {
@@ -39,7 +39,7 @@ class EntryPointTest extends FunSuite {
   test("EntryPoint method - write fail") {
     var isOk = false
     try {
-      EntryPoint.main(Array("./testInput1.fail.json"))
+      EntryPoint.main(Array("./resources/test/testInput1.fail.json"))
       isOk = true
     } catch {
         case e: Exception => {
@@ -52,7 +52,7 @@ class EntryPointTest extends FunSuite {
   test("EntryPoint method - read fail") {
     var isOk = false
     try {
-      EntryPoint.main(Array("./testInput2.fail.json"))
+      EntryPoint.main(Array("./resources/test/testInput2.fail.json"))
       isOk = true
     } catch {
         case e: Exception => {

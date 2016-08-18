@@ -37,7 +37,7 @@ class SparkEngineServiceTest extends FunSuite {
       val schemaList = Array("h1","h2")
       val structField = schemaList.map(fieldName => StructField(fieldName, StringType, nullable = true))
       val a44 = scc.createDataFrame(sc.emptyRDD[Row], StructType(structField))
-      val df = a1.makeDataframeFromJSON(scc, "./test1.json")
+      val df = a1.makeDataframeFromJSON(scc, "./resources/main/record.json")
       assert(df.getClass.toString() == a44.getClass.toString())
       
   }

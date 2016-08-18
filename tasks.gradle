@@ -1,0 +1,77 @@
+FIND ALL REPORTS AT FOLLOWING LOCATION:
+file:///Users/mayank.jaglan/moon/github.com/welltok/SparkReadWriteDF/build/reports/tests/index.html
+useAnt has been deprecated and is scheduled to be removed in Gradle 3.0. The Ant-Based Scala compiler is deprecated, please see https://docs.gradle.org/current/userguide/scala_plugin.html.
+:tasks
+
+------------------------------------------------------------
+All tasks runnable from root project
+------------------------------------------------------------
+
+Build tasks
+-----------
+assemble - Assembles the outputs of this project.
+build - Assembles and tests this project.
+buildDependents - Assembles and tests this project and all projects that depend on it.
+buildNeeded - Assembles and tests this project and all projects it depends on.
+classes - Assembles main classes.
+clean - Deletes the build directory.
+jar - Assembles a jar archive containing the main classes.
+scoverageClasses - Assembles scoverage classes.
+testClasses - Assembles test classes.
+testScoverageClasses - Assembles test scoverage classes.
+
+Build Setup tasks
+-----------------
+init - Initializes a new Gradle build. [incubating]
+wrapper - Generates Gradle wrapper files. [incubating]
+
+Documentation tasks
+-------------------
+javadoc - Generates Javadoc API documentation for the main source code.
+scaladoc - Generates Scaladoc for the main source code.
+
+Help tasks
+----------
+buildEnvironment - Displays all buildscript dependencies declared in root project 'SparkReadWriteDF'.
+components - Displays the components produced by root project 'SparkReadWriteDF'. [incubating]
+dependencies - Displays all dependencies declared in root project 'SparkReadWriteDF'.
+dependencyInsight - Displays the insight into a specific dependency in root project 'SparkReadWriteDF'.
+help - Displays a help message.
+model - Displays the configuration model of root project 'SparkReadWriteDF'. [incubating]
+projects - Displays the sub-projects of root project 'SparkReadWriteDF'.
+properties - Displays the properties of root project 'SparkReadWriteDF'.
+tasks - Displays the tasks runnable from root project 'SparkReadWriteDF'.
+
+IDE tasks
+---------
+cleanEclipse - Cleans all Eclipse files.
+eclipse - Generates all Eclipse files.
+
+Reporting tasks
+---------------
+projectReport - Generates a report about your project.
+
+Verification tasks
+------------------
+check - Runs all checks.
+test - Runs the unit tests.
+
+Other tasks
+-----------
+checkScoverage
+
+Rules
+-----
+Pattern: clean<TaskName>: Cleans the output files of a task.
+Pattern: build<ConfigurationName>: Assembles the artifacts of a configuration.
+Pattern: upload<ConfigurationName>: Assembles and uploads the artifacts belonging to a configuration.
+
+To see all tasks and more detail, run gradle tasks --all
+
+To see more detail about a task, run gradle help --task <task>
+
+BUILD SUCCESSFUL
+
+Total time: 2.984 secs
+
+This build could be faster, please consider using the Gradle Daemon: https://docs.gradle.org/2.14.1/userguide/gradle_daemon.html

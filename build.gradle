@@ -31,8 +31,9 @@ apply plugin: 'org.scoverage'
 
 
 allprojects {
-	println  "FIND ALL REPORTS AT FOLLOWING LOCATION:"
-	println  "file://"+"${project.reportsDir}"+"/tests/index.html"
+	println  "FIND TEST REPORTS AT FOLLOWING LOCATION:"          + "\n\t" + "${project.reportsDir}" + "/tests/"
+	println  "FIND CODE COVERAGE REPORTS AT FOLLOWING LOCATION:" + "\n\t" + "${project.reportsDir}" + "/scoverage/"
+	println  "FIND OUTPUT JAR AT FOLLOWING LOCATION:"            + "\n\t" + "${project.libsDir}"
 }
 
 

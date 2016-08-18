@@ -1,8 +1,3 @@
-FIND ALL REPORTS AT FOLLOWING LOCATION:
-file:///Users/mayank.jaglan/moon/github.com/welltok/SparkReadWriteDF/build/reports/tests/index.html
-useAnt has been deprecated and is scheduled to be removed in Gradle 3.0. The Ant-Based Scala compiler is deprecated, please see https://docs.gradle.org/current/userguide/scala_plugin.html.
-:tasks
-
 ------------------------------------------------------------
 All tasks runnable from root project
 ------------------------------------------------------------
@@ -47,10 +42,6 @@ IDE tasks
 cleanEclipse - Cleans all Eclipse files.
 eclipse - Generates all Eclipse files.
 
-Reporting tasks
----------------
-projectReport - Generates a report about your project.
-
 Verification tasks
 ------------------
 check - Runs all checks.
@@ -59,19 +50,10 @@ test - Runs the unit tests.
 Other tasks
 -----------
 checkScoverage
+jarScoverage
 
 Rules
 -----
 Pattern: clean<TaskName>: Cleans the output files of a task.
 Pattern: build<ConfigurationName>: Assembles the artifacts of a configuration.
 Pattern: upload<ConfigurationName>: Assembles and uploads the artifacts belonging to a configuration.
-
-To see all tasks and more detail, run gradle tasks --all
-
-To see more detail about a task, run gradle help --task <task>
-
-BUILD SUCCESSFUL
-
-Total time: 2.984 secs
-
-This build could be faster, please consider using the Gradle Daemon: https://docs.gradle.org/2.14.1/userguide/gradle_daemon.html

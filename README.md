@@ -40,20 +40,20 @@ jarScoverage
 ##Input Resources
 - Common Resources
 
-  - ![record.json](resources/main/record.json)
-  - ![dbArgs.json](resources/main/dbArgs.json)
-  - ![sparkArgs.json](resources/main/sparkArgs.json)
+  - ![record.json](resources/main/record.json) has JSON records which will be written to DB.
+  - ![dbArgs.json](resources/main/dbArgs.json) MySQL DB Connection Details are present here.
+  - ![sparkArgs.json](resources/main/sparkArgs.json) Spark Engine Configuration Details are present here.
 
 - For ```src/main/``` specific
 
-  - ![input.json](resources/main/input.json)
+  - ![input.json](resources/main/input.json) contains input arguments for the EntryPoint.
 
 - For ```src/test/``` specific
 
-  - ![testInput1.json](resources/main/testInput1.json)
-  - ![testInput1.fail.json](resources/main/testInput1.fail.json)
-  - ![testInput2.json](resources/main/testInput2.json)
-  - ![testInput2.fail.json](resources/main/testInput2.fail.json)
+  - ![testInput1.json](resources/main/testInput1.json)  contains input arguments for the EntryPointTest.
+  - ![testInput1.fail.json](resources/main/testInput1.fail.json)   contains input arguments for the EntryPointTest.
+  - ![testInput2.json](resources/main/testInput2.json)   contains input arguments for the EntryPointTest.
+  - ![testInput2.fail.json](resources/main/testInput2.fail.json)   contains input arguments for the EntryPointTest.
 
 <br><br>
 

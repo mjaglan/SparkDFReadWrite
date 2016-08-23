@@ -1,0 +1,599 @@
+<scoverage 
+statement-count="164" statements-invoked="164" statement-rate="100.00" branch-rate="100.00" version="1.0" timestamp="1471932277142">
+    <packages>
+        <package name="edu.indiana.soic.cs" statement-count="64" statements-invoked="64" statement-rate="100.00">
+            <classes>
+                <class 
+                name="EntryPoint" filename="src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" statement-count="64" statements-invoked="64" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="edu.indiana.soic.cs/EntryPoint/&lt;none&gt;" statement-count="64" statements-invoked="64" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="835" end="851" line="28" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1757" end="1790" line="60" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1946" end="2019" line="68" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1565" end="1568" line="53" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1206" end="1211" line="40" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="2073" end="2107" line="72" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1877" end="1886" line="66" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1253" end="1285" line="43" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="625" end="668" line="24" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="448" end="477" line="17" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1585" end="1614" line="53" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="958" end="977" line="31" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="508" end="531" line="19" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1860" end="1914" line="66" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1048" end="1074" line="34" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1491" end="1494" line="51" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1714" end="1730" line="57" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="710" end="741" line="25" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="322" end="327" line="13" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="370" end="376" line="14" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="-1" end="-1" line="18" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1647" end="1707" line="56" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1888" end="1913" line="66" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1811" end="2122" line="63" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1954" end="2018" line="68" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1757" end="1790" line="60" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1465" end="1527" line="51" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="-1" end="-1" line="18" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="305" end="350" line="13" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="671" end="744" line="25" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1111" end="1143" line="37" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="654" end="667" line="24" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="353" end="399" line="14" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1872" end="1875" line="66" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1598" end="1609" line="53" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="793" end="857" line="28" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1282" end="1284" line="43" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1938" end="2059" line="67" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="524" end="531" line="19" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1391" end="1426" line="49" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="233" end="263" line="10" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="722" end="741" line="25" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="916" end="983" line="31" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="2026" end="2045" line="69" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="2073" end="2107" line="72" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1901" end="1908" line="66" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1552" end="1615" line="53" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="945" end="982" line="31" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1326" end="1356" line="46" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="714" end="719" line="25" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="484" end="500" line="18" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1923" end="1936" line="67" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="702" end="742" line="25" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1639" end="1743" line="55" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="338" end="349" line="13" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="508" end="531" line="19" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1128" end="1142" line="37" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1496" end="1526" line="51" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="592" end="607" line="23" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1570" end="1579" line="53" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1428" end="1805" line="49" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="822" end="856" line="28" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="1180" end="1212" line="40" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs" class="EntryPoint" class-type="Object" top-level-class="EntryPoint" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" method="&lt;none&gt;" start="387" end="398" line="14" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+            </classes>
+        </package>
+        <package name="edu.indiana.soic.cs.services" statement-count="39" statements-invoked="39" statement-rate="100.00">
+            <classes>
+                <class 
+                name="MySQLConnectionServiceImpl" filename="src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" statement-count="31" statements-invoked="31" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="edu.indiana.soic.cs.services/MySQLConnectionServiceImpl/readDF" statement-count="4" statements-invoked="4" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="MySQLConnectionServiceImpl" class-type="Class" top-level-class="MySQLConnectionServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" method="readDF" start="1204" end="1654" line="44" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="MySQLConnectionServiceImpl" class-type="Class" top-level-class="MySQLConnectionServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" method="readDF" start="1761" end="1765" line="49" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="MySQLConnectionServiceImpl" class-type="Class" top-level-class="MySQLConnectionServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" method="readDF" start="1727" end="1746" line="48" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="MySQLConnectionServiceImpl" class-type="Class" top-level-class="MySQLConnectionServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" method="readDF" start="1195" end="1665" line="37" branch="true" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="edu.indiana.soic.cs.services/MySQLConnectionServiceImpl/writeDF" statement-count="27" statements-invoked="27" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="MySQLConnectionServiceImpl" class-type="Class" top-level-class="MySQLConnectionServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" method="writeDF" start="828" end="862" line="23" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="MySQLConnectionServiceImpl" class-type="Class" top-level-class="MySQLConnectionServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" method="writeDF" start="647" end="667" line="19" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="MySQLConnectionServiceImpl" class-type="Class" top-level-class="MySQLConnectionServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" method="writeDF" start="871" end="914" line="24" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="MySQLConnectionServiceImpl" class-type="Class" top-level-class="MySQLConnectionServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" method="writeDF" start="375" end="419" line="12" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="MySQLConnectionServiceImpl" class-type="Class" top-level-class="MySQLConnectionServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" method="writeDF" start="554" end="960" line="16" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="MySQLConnectionServiceImpl" class-type="Class" top-level-class="MySQLConnectionServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" method="writeDF" start="608" end="688" line="19" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="MySQLConnectionServiceImpl" class-type="Class" top-level-class="MySQLConnectionServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" method="writeDF" start="426" end="474" line="13" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="MySQLConnectionServiceImpl" class-type="Class" top-level-class="MySQLConnectionServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" method="writeDF" start="608" end="623" line="19" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="MySQLConnectionServiceImpl" class-type="Class" top-level-class="MySQLConnectionServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" method="writeDF" start="352" end="368" line="11" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="MySQLConnectionServiceImpl" class-type="Class" top-level-class="MySQLConnectionServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" method="writeDF" start="779" end="807" line="22" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="MySQLConnectionServiceImpl" class-type="Class" top-level-class="MySQLConnectionServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" method="writeDF" start="1056" end="1061" line="31" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="MySQLConnectionServiceImpl" class-type="Class" top-level-class="MySQLConnectionServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" method="writeDF" start="577" end="592" line="18" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="MySQLConnectionServiceImpl" class-type="Class" top-level-class="MySQLConnectionServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" method="writeDF" start="400" end="418" line="12" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="MySQLConnectionServiceImpl" class-type="Class" top-level-class="MySQLConnectionServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" method="writeDF" start="902" end="912" line="24" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="MySQLConnectionServiceImpl" class-type="Class" top-level-class="MySQLConnectionServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" method="writeDF" start="643" end="646" line="19" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="MySQLConnectionServiceImpl" class-type="Class" top-level-class="MySQLConnectionServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" method="writeDF" start="672" end="688" line="19" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="MySQLConnectionServiceImpl" class-type="Class" top-level-class="MySQLConnectionServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" method="writeDF" start="956" end="960" line="27" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="MySQLConnectionServiceImpl" class-type="Class" top-level-class="MySQLConnectionServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" method="writeDF" start="455" end="473" line="13" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="MySQLConnectionServiceImpl" class-type="Class" top-level-class="MySQLConnectionServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" method="writeDF" start="923" end="938" line="25" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="MySQLConnectionServiceImpl" class-type="Class" top-level-class="MySQLConnectionServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" method="writeDF" start="668" end="671" line="19" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="MySQLConnectionServiceImpl" class-type="Class" top-level-class="MySQLConnectionServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" method="writeDF" start="443" end="453" line="13" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="MySQLConnectionServiceImpl" class-type="Class" top-level-class="MySQLConnectionServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" method="writeDF" start="1022" end="1041" line="30" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="MySQLConnectionServiceImpl" class-type="Class" top-level-class="MySQLConnectionServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" method="writeDF" start="554" end="706" line="19" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="MySQLConnectionServiceImpl" class-type="Class" top-level-class="MySQLConnectionServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" method="writeDF" start="481" end="532" line="14" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="MySQLConnectionServiceImpl" class-type="Class" top-level-class="MySQLConnectionServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" method="writeDF" start="871" end="886" line="24" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="MySQLConnectionServiceImpl" class-type="Class" top-level-class="MySQLConnectionServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" method="writeDF" start="624" end="642" line="19" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="MySQLConnectionServiceImpl" class-type="Class" top-level-class="MySQLConnectionServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" method="writeDF" start="392" end="398" line="12" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="SparkEngineServiceImpl" filename="src/main/scala/edu/indiana/soic/cs/services/SparkEngineServiceImpl.scala" statement-count="8" statements-invoked="8" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="edu.indiana.soic.cs.services/SparkEngineServiceImpl/getApacheSparkSQLContext" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="SparkEngineServiceImpl" class-type="Class" top-level-class="SparkEngineServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/SparkEngineServiceImpl.scala" method="getApacheSparkSQLContext" start="657" end="683" line="24" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="edu.indiana.soic.cs.services/SparkEngineServiceImpl/getApacheSparkContext" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="SparkEngineServiceImpl" class-type="Class" top-level-class="SparkEngineServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/SparkEngineServiceImpl.scala" method="getApacheSparkContext" start="526" end="558" line="18" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="edu.indiana.soic.cs.services/SparkEngineServiceImpl/makeDataframeFromJSON" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="SparkEngineServiceImpl" class-type="Class" top-level-class="SparkEngineServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/SparkEngineServiceImpl.scala" method="makeDataframeFromJSON" start="795" end="818" line="30" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="edu.indiana.soic.cs.services/SparkEngineServiceImpl/getSparkConf" statement-count="5" statements-invoked="5" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="SparkEngineServiceImpl" class-type="Class" top-level-class="SparkEngineServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/SparkEngineServiceImpl.scala" method="getSparkConf" start="362" end="391" line="12" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="SparkEngineServiceImpl" class-type="Class" top-level-class="SparkEngineServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/SparkEngineServiceImpl.scala" method="getSparkConf" start="265" end="423" line="12" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="SparkEngineServiceImpl" class-type="Class" top-level-class="SparkEngineServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/SparkEngineServiceImpl.scala" method="getSparkConf" start="331" end="351" line="11" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="SparkEngineServiceImpl" class-type="Class" top-level-class="SparkEngineServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/SparkEngineServiceImpl.scala" method="getSparkConf" start="297" end="314" line="10" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.services" class="SparkEngineServiceImpl" class-type="Class" top-level-class="SparkEngineServiceImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/services/SparkEngineServiceImpl.scala" method="getSparkConf" start="393" end="422" line="12" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+            </classes>
+        </package>
+        <package name="edu.indiana.soic.cs.utils" statement-count="61" statements-invoked="61" statement-rate="100.00">
+            <classes>
+                <class 
+                name="JsonUtil" filename="src/main/scala/edu/indiana/soic/cs/utils/JsonUtil.scala" statement-count="9" statements-invoked="9" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="edu.indiana.soic.cs.utils/JsonUtil/fromJson" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="JsonUtil" class-type="Object" top-level-class="JsonUtil" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/JsonUtil.scala" method="fromJson" start="696" end="721" line="17" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="edu.indiana.soic.cs.utils/JsonUtil/&lt;none&gt;" statement-count="4" statements-invoked="4" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="JsonUtil" class-type="Class" top-level-class="JsonUtil" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/JsonUtil.scala" method="&lt;none&gt;" start="377" end="380" line="10" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="JsonUtil" class-type="Class" top-level-class="JsonUtil" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/JsonUtil.scala" method="&lt;none&gt;" start="465" end="539" line="12" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="JsonUtil" class-type="Class" top-level-class="JsonUtil" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/JsonUtil.scala" method="&lt;none&gt;" start="421" end="462" line="11" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="JsonUtil" class-type="Class" top-level-class="JsonUtil" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/JsonUtil.scala" method="&lt;none&gt;" start="443" end="461" line="11" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="edu.indiana.soic.cs.utils/JsonUtil/toMap" statement-count="4" statements-invoked="4" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="JsonUtil" class-type="Object" top-level-class="JsonUtil" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/JsonUtil.scala" method="toMap" start="-1" end="-1" line="14" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="JsonUtil" class-type="Object" top-level-class="JsonUtil" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/JsonUtil.scala" method="toMap" start="-1" end="-1" line="14" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="JsonUtil" class-type="Object" top-level-class="JsonUtil" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/JsonUtil.scala" method="toMap" start="-1" end="-1" line="14" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="JsonUtil" class-type="Object" top-level-class="JsonUtil" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/JsonUtil.scala" method="toMap" start="596" end="625" line="14" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="MyUtilsImpl" filename="src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" statement-count="52" statements-invoked="52" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="edu.indiana.soic.cs.utils/MyUtilsImpl/getInputArgs" statement-count="7" statements-invoked="7" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getInputArgs" start="1870" end="1950" line="43" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getInputArgs" start="-1" end="-1" line="42" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getInputArgs" start="-1" end="-1" line="43" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getInputArgs" start="-1" end="-1" line="43" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getInputArgs" start="1807" end="1852" line="42" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getInputArgs" start="-1" end="-1" line="43" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getInputArgs" start="-1" end="-1" line="43" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="edu.indiana.soic.cs.utils/MyUtilsImpl/getMySQLArgs" statement-count="23" statements-invoked="23" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getMySQLArgs" start="-1" end="-1" line="27" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getMySQLArgs" start="1211" end="1276" line="29" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getMySQLArgs" start="1609" end="1617" line="36" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getMySQLArgs" start="-1" end="-1" line="27" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getMySQLArgs" start="1426" end="1436" line="33" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getMySQLArgs" start="1487" end="1497" line="34" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getMySQLArgs" start="1250" end="1255" line="29" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getMySQLArgs" start="1054" end="1099" line="26" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getMySQLArgs" start="1238" end="1274" line="29" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getMySQLArgs" start="1539" end="1563" line="35" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getMySQLArgs" start="-1" end="-1" line="27" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getMySQLArgs" start="1307" end="1623" line="31" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getMySQLArgs" start="1354" end="1378" line="32" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getMySQLArgs" start="1363" end="1373" line="32" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getMySQLArgs" start="1600" end="1622" line="36" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getMySQLArgs" start="-1" end="-1" line="27" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getMySQLArgs" start="1417" end="1441" line="33" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getMySQLArgs" start="1117" end="1197" line="27" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getMySQLArgs" start="1246" end="1273" line="29" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getMySQLArgs" start="1548" end="1558" line="35" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getMySQLArgs" start="-1" end="-1" line="26" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getMySQLArgs" start="1478" end="1502" line="34" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getMySQLArgs" start="1258" end="1273" line="29" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="edu.indiana.soic.cs.utils/MyUtilsImpl/getSparkArgs" statement-count="22" statements-invoked="22" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getSparkArgs" start="349" end="426" line="11" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getSparkArgs" start="616" end="667" line="16" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getSparkArgs" start="718" end="762" line="18" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getSparkArgs" start="475" end="502" line="13" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getSparkArgs" start="-1" end="-1" line="10" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getSparkArgs" start="703" end="910" line="18" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getSparkArgs" start="547" end="563" line="15" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getSparkArgs" start="-1" end="-1" line="11" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getSparkArgs" start="440" end="505" line="13" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getSparkArgs" start="806" end="853" line="19" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getSparkArgs" start="-1" end="-1" line="11" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getSparkArgs" start="625" end="641" line="16" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getSparkArgs" start="-1" end="-1" line="11" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getSparkArgs" start="727" end="736" line="18" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getSparkArgs" start="487" end="502" line="13" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getSparkArgs" start="532" end="668" line="15" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getSparkArgs" start="479" end="484" line="13" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getSparkArgs" start="815" end="827" line="19" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getSparkArgs" start="286" end="331" line="10" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getSparkArgs" start="467" end="503" line="13" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getSparkArgs" start="538" end="589" line="15" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="edu.indiana.soic.cs.utils" class="MyUtilsImpl" class-type="Class" top-level-class="MyUtilsImpl" source="/home/hduser/github.com/SparkDFReadWrite/src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" method="getSparkArgs" start="-1" end="-1" line="11" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+            </classes>
+        </package>
+    </packages>
+</scoverage>

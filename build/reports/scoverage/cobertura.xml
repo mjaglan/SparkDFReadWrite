@@ -1,0 +1,444 @@
+<?xml version="1.0"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage 
+line-rate="1.00" lines-covered="164" lines-valid="164" branches-covered="10" branches-valid="10" branch-rate="1.00" complexity="0" version="1.0" timestamp="1471932276965">
+    <sources>
+        <source>--source</source>
+        <source>/home/hduser/github.com/SparkDFReadWrite</source>
+    </sources>
+    <packages>
+        <package name="edu.indiana.soic.cs" line-rate="1.00" branch-rate="1.00" complexity="0">
+            <classes>
+                <class 
+                name="EntryPoint" filename="src/main/scala/edu/indiana/soic/cs/EntryPoint.scala" line-rate="1.00" branch-rate="1.00" complexity="0">
+                    <methods>
+                        <method name="edu.indiana.soic.cs/EntryPoint/&lt;none&gt;" signature="()V" line-rate="1.00" branch-rate="1.00">
+                            <lines>
+                                <line number="28" hits="1" branch="false"/>
+                                <line number="60" hits="1" branch="false"/>
+                                <line number="68" hits="1" branch="false"/>
+                                <line number="53" hits="1" branch="false"/>
+                                <line number="40" hits="1" branch="false"/>
+                                <line number="72" hits="1" branch="false"/>
+                                <line number="66" hits="1" branch="false"/>
+                                <line number="43" hits="1" branch="false"/>
+                                <line number="24" hits="1" branch="false"/>
+                                <line number="17" hits="1" branch="false"/>
+                                <line number="53" hits="1" branch="false"/>
+                                <line number="31" hits="1" branch="false"/>
+                                <line number="19" hits="1" branch="false"/>
+                                <line number="66" hits="1" branch="false"/>
+                                <line number="34" hits="1" branch="false"/>
+                                <line number="51" hits="1" branch="false"/>
+                                <line number="57" hits="1" branch="false"/>
+                                <line number="25" hits="1" branch="false"/>
+                                <line number="13" hits="1" branch="false"/>
+                                <line number="14" hits="1" branch="false"/>
+                                <line number="18" hits="1" branch="false"/>
+                                <line number="56" hits="1" branch="false"/>
+                                <line number="66" hits="1" branch="false"/>
+                                <line number="63" hits="1" branch="false"/>
+                                <line number="68" hits="1" branch="false"/>
+                                <line number="60" hits="1" branch="false"/>
+                                <line number="51" hits="1" branch="false"/>
+                                <line number="18" hits="1" branch="false"/>
+                                <line number="13" hits="1" branch="false"/>
+                                <line number="25" hits="1" branch="false"/>
+                                <line number="37" hits="1" branch="false"/>
+                                <line number="24" hits="1" branch="false"/>
+                                <line number="14" hits="1" branch="false"/>
+                                <line number="66" hits="1" branch="false"/>
+                                <line number="53" hits="1" branch="false"/>
+                                <line number="28" hits="1" branch="false"/>
+                                <line number="43" hits="1" branch="false"/>
+                                <line number="67" hits="1" branch="false"/>
+                                <line number="19" hits="1" branch="false"/>
+                                <line number="49" hits="1" branch="false"/>
+                                <line number="10" hits="1" branch="false"/>
+                                <line number="25" hits="1" branch="false"/>
+                                <line number="31" hits="1" branch="false"/>
+                                <line number="69" hits="1" branch="false"/>
+                                <line number="72" hits="1" branch="false"/>
+                                <line number="66" hits="1" branch="false"/>
+                                <line number="53" hits="1" branch="false"/>
+                                <line number="31" hits="1" branch="false"/>
+                                <line number="46" hits="1" branch="false"/>
+                                <line number="25" hits="1" branch="false"/>
+                                <line number="18" hits="1" branch="false"/>
+                                <line number="67" hits="1" branch="false"/>
+                                <line number="25" hits="1" branch="false"/>
+                                <line number="55" hits="1" branch="false"/>
+                                <line number="13" hits="1" branch="false"/>
+                                <line number="19" hits="1" branch="false"/>
+                                <line number="37" hits="1" branch="false"/>
+                                <line number="51" hits="1" branch="false"/>
+                                <line number="23" hits="1" branch="false"/>
+                                <line number="53" hits="1" branch="false"/>
+                                <line number="49" hits="1" branch="false"/>
+                                <line number="28" hits="1" branch="false"/>
+                                <line number="40" hits="1" branch="false"/>
+                                <line number="14" hits="1" branch="false"/>
+                            </lines>
+                        </method>
+                    </methods>
+                    <lines>
+                        <line number="28" hits="1" branch="false"/>
+                        <line number="60" hits="1" branch="false"/>
+                        <line number="68" hits="1" branch="false"/>
+                        <line number="53" hits="1" branch="false"/>
+                        <line number="40" hits="1" branch="false"/>
+                        <line number="72" hits="1" branch="false"/>
+                        <line number="66" hits="1" branch="false"/>
+                        <line number="43" hits="1" branch="false"/>
+                        <line number="24" hits="1" branch="false"/>
+                        <line number="17" hits="1" branch="false"/>
+                        <line number="53" hits="1" branch="false"/>
+                        <line number="31" hits="1" branch="false"/>
+                        <line number="19" hits="1" branch="false"/>
+                        <line number="66" hits="1" branch="false"/>
+                        <line number="34" hits="1" branch="false"/>
+                        <line number="51" hits="1" branch="false"/>
+                        <line number="57" hits="1" branch="false"/>
+                        <line number="25" hits="1" branch="false"/>
+                        <line number="13" hits="1" branch="false"/>
+                        <line number="14" hits="1" branch="false"/>
+                        <line number="18" hits="1" branch="false"/>
+                        <line number="56" hits="1" branch="false"/>
+                        <line number="66" hits="1" branch="false"/>
+                        <line number="63" hits="1" branch="false"/>
+                        <line number="68" hits="1" branch="false"/>
+                        <line number="60" hits="1" branch="false"/>
+                        <line number="51" hits="1" branch="false"/>
+                        <line number="18" hits="1" branch="false"/>
+                        <line number="13" hits="1" branch="false"/>
+                        <line number="25" hits="1" branch="false"/>
+                        <line number="37" hits="1" branch="false"/>
+                        <line number="24" hits="1" branch="false"/>
+                        <line number="14" hits="1" branch="false"/>
+                        <line number="66" hits="1" branch="false"/>
+                        <line number="53" hits="1" branch="false"/>
+                        <line number="28" hits="1" branch="false"/>
+                        <line number="43" hits="1" branch="false"/>
+                        <line number="67" hits="1" branch="false"/>
+                        <line number="19" hits="1" branch="false"/>
+                        <line number="49" hits="1" branch="false"/>
+                        <line number="10" hits="1" branch="false"/>
+                        <line number="25" hits="1" branch="false"/>
+                        <line number="31" hits="1" branch="false"/>
+                        <line number="69" hits="1" branch="false"/>
+                        <line number="72" hits="1" branch="false"/>
+                        <line number="66" hits="1" branch="false"/>
+                        <line number="53" hits="1" branch="false"/>
+                        <line number="31" hits="1" branch="false"/>
+                        <line number="46" hits="1" branch="false"/>
+                        <line number="25" hits="1" branch="false"/>
+                        <line number="18" hits="1" branch="false"/>
+                        <line number="67" hits="1" branch="false"/>
+                        <line number="25" hits="1" branch="false"/>
+                        <line number="55" hits="1" branch="false"/>
+                        <line number="13" hits="1" branch="false"/>
+                        <line number="19" hits="1" branch="false"/>
+                        <line number="37" hits="1" branch="false"/>
+                        <line number="51" hits="1" branch="false"/>
+                        <line number="23" hits="1" branch="false"/>
+                        <line number="53" hits="1" branch="false"/>
+                        <line number="49" hits="1" branch="false"/>
+                        <line number="28" hits="1" branch="false"/>
+                        <line number="40" hits="1" branch="false"/>
+                        <line number="14" hits="1" branch="false"/>
+                    </lines>
+</class>
+            </classes>
+        </package>
+        <package name="edu.indiana.soic.cs.services" line-rate="1.00" branch-rate="1.00" complexity="0">
+            <classes>
+                <class 
+                name="MySQLConnectionServiceImpl" filename="src/main/scala/edu/indiana/soic/cs/services/MySQLConnectionServiceImpl.scala" line-rate="1.00" branch-rate="1.00" complexity="0">
+                    <methods>
+                        <method 
+                        name="edu.indiana.soic.cs.services/MySQLConnectionServiceImpl/readDF" signature="()V" line-rate="1.00" branch-rate="1.00">
+                            <lines>
+                                <line number="44" hits="1" branch="false"/>
+                                <line number="49" hits="1" branch="false"/>
+                                <line number="48" hits="1" branch="false"/>
+                                <line number="37" hits="1" branch="false"/>
+                            </lines>
+</method>
+                        <method 
+                        name="edu.indiana.soic.cs.services/MySQLConnectionServiceImpl/writeDF" signature="()V" line-rate="1.00" branch-rate="1.00">
+                            <lines>
+                                <line number="23" hits="1" branch="false"/>
+                                <line number="19" hits="1" branch="false"/>
+                                <line number="24" hits="1" branch="false"/>
+                                <line number="12" hits="1" branch="false"/>
+                                <line number="16" hits="1" branch="false"/>
+                                <line number="19" hits="1" branch="false"/>
+                                <line number="13" hits="1" branch="false"/>
+                                <line number="19" hits="1" branch="false"/>
+                                <line number="11" hits="1" branch="false"/>
+                                <line number="22" hits="1" branch="false"/>
+                                <line number="31" hits="1" branch="false"/>
+                                <line number="18" hits="1" branch="false"/>
+                                <line number="12" hits="1" branch="false"/>
+                                <line number="24" hits="1" branch="false"/>
+                                <line number="19" hits="1" branch="false"/>
+                                <line number="19" hits="1" branch="false"/>
+                                <line number="27" hits="1" branch="false"/>
+                                <line number="13" hits="1" branch="false"/>
+                                <line number="25" hits="1" branch="false"/>
+                                <line number="19" hits="1" branch="false"/>
+                                <line number="13" hits="1" branch="false"/>
+                                <line number="30" hits="1" branch="false"/>
+                                <line number="19" hits="1" branch="false"/>
+                                <line number="14" hits="1" branch="false"/>
+                                <line number="24" hits="1" branch="false"/>
+                                <line number="19" hits="1" branch="false"/>
+                                <line number="12" hits="1" branch="false"/>
+                            </lines>
+</method>
+                    </methods>
+                    <lines>
+                        <line number="44" hits="1" branch="false"/>
+                        <line number="23" hits="1" branch="false"/>
+                        <line number="49" hits="1" branch="false"/>
+                        <line number="19" hits="1" branch="false"/>
+                        <line number="24" hits="1" branch="false"/>
+                        <line number="12" hits="1" branch="false"/>
+                        <line number="16" hits="1" branch="false"/>
+                        <line number="19" hits="1" branch="false"/>
+                        <line number="13" hits="1" branch="false"/>
+                        <line number="19" hits="1" branch="false"/>
+                        <line number="11" hits="1" branch="false"/>
+                        <line number="22" hits="1" branch="false"/>
+                        <line number="31" hits="1" branch="false"/>
+                        <line number="18" hits="1" branch="false"/>
+                        <line number="12" hits="1" branch="false"/>
+                        <line number="24" hits="1" branch="false"/>
+                        <line number="48" hits="1" branch="false"/>
+                        <line number="19" hits="1" branch="false"/>
+                        <line number="19" hits="1" branch="false"/>
+                        <line number="27" hits="1" branch="false"/>
+                        <line number="13" hits="1" branch="false"/>
+                        <line number="25" hits="1" branch="false"/>
+                        <line number="19" hits="1" branch="false"/>
+                        <line number="13" hits="1" branch="false"/>
+                        <line number="30" hits="1" branch="false"/>
+                        <line number="19" hits="1" branch="false"/>
+                        <line number="14" hits="1" branch="false"/>
+                        <line number="24" hits="1" branch="false"/>
+                        <line number="37" hits="1" branch="false"/>
+                        <line number="19" hits="1" branch="false"/>
+                        <line number="12" hits="1" branch="false"/>
+                    </lines>
+</class>
+                <class 
+                name="SparkEngineServiceImpl" filename="src/main/scala/edu/indiana/soic/cs/services/SparkEngineServiceImpl.scala" line-rate="1.00" branch-rate="1.00" complexity="0">
+                    <methods>
+                        <method 
+                        name="edu.indiana.soic.cs.services/SparkEngineServiceImpl/getApacheSparkSQLContext" signature="()V" line-rate="1.00" branch-rate="1.00">
+                            <lines>
+                                <line number="24" hits="1" branch="false"/>
+                            </lines>
+</method>
+                        <method 
+                        name="edu.indiana.soic.cs.services/SparkEngineServiceImpl/getApacheSparkContext" signature="()V" line-rate="1.00" branch-rate="1.00">
+                            <lines>
+                                <line number="18" hits="1" branch="false"/>
+                            </lines>
+</method>
+                        <method 
+                        name="edu.indiana.soic.cs.services/SparkEngineServiceImpl/makeDataframeFromJSON" signature="()V" line-rate="1.00" branch-rate="1.00">
+                            <lines>
+                                <line number="30" hits="1" branch="false"/>
+                            </lines>
+</method>
+                        <method 
+                        name="edu.indiana.soic.cs.services/SparkEngineServiceImpl/getSparkConf" signature="()V" line-rate="1.00" branch-rate="1.00">
+                            <lines>
+                                <line number="12" hits="1" branch="false"/>
+                                <line number="12" hits="1" branch="false"/>
+                                <line number="11" hits="1" branch="false"/>
+                                <line number="10" hits="1" branch="false"/>
+                                <line number="12" hits="1" branch="false"/>
+                            </lines>
+</method>
+                    </methods>
+                    <lines>
+                        <line number="18" hits="1" branch="false"/>
+                        <line number="12" hits="1" branch="false"/>
+                        <line number="12" hits="1" branch="false"/>
+                        <line number="30" hits="1" branch="false"/>
+                        <line number="11" hits="1" branch="false"/>
+                        <line number="10" hits="1" branch="false"/>
+                        <line number="12" hits="1" branch="false"/>
+                        <line number="24" hits="1" branch="false"/>
+                    </lines>
+</class>
+            </classes>
+        </package>
+        <package name="edu.indiana.soic.cs.utils" line-rate="1.00" branch-rate="1.00" complexity="0">
+            <classes>
+                <class 
+                name="JsonUtil" filename="src/main/scala/edu/indiana/soic/cs/utils/JsonUtil.scala" line-rate="1.00" branch-rate="1.00" complexity="0">
+                    <methods>
+                        <method name="edu.indiana.soic.cs.utils/JsonUtil/fromJson" signature="()V" line-rate="1.00" branch-rate="1.00">
+                            <lines>
+                                <line number="17" hits="1" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="edu.indiana.soic.cs.utils/JsonUtil/&lt;none&gt;" signature="()V" line-rate="1.00" branch-rate="1.00">
+                            <lines>
+                                <line number="10" hits="1" branch="false"/>
+                                <line number="12" hits="1" branch="false"/>
+                                <line number="11" hits="1" branch="false"/>
+                                <line number="11" hits="1" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="edu.indiana.soic.cs.utils/JsonUtil/toMap" signature="()V" line-rate="1.00" branch-rate="1.00">
+                            <lines>
+                                <line number="14" hits="1" branch="false"/>
+                                <line number="14" hits="1" branch="false"/>
+                                <line number="14" hits="1" branch="false"/>
+                                <line number="14" hits="1" branch="false"/>
+                            </lines>
+                        </method>
+                    </methods>
+                    <lines>
+                        <line number="14" hits="1" branch="false"/>
+                        <line number="10" hits="1" branch="false"/>
+                        <line number="12" hits="1" branch="false"/>
+                        <line number="11" hits="1" branch="false"/>
+                        <line number="14" hits="1" branch="false"/>
+                        <line number="17" hits="1" branch="false"/>
+                        <line number="11" hits="1" branch="false"/>
+                        <line number="14" hits="1" branch="false"/>
+                        <line number="14" hits="1" branch="false"/>
+                    </lines>
+</class>
+                <class 
+                name="MyUtilsImpl" filename="src/main/scala/edu/indiana/soic/cs/utils/MyUtilsImpl.scala" line-rate="1.00" branch-rate="1.00" complexity="0">
+                    <methods>
+                        <method name="edu.indiana.soic.cs.utils/MyUtilsImpl/getInputArgs" signature="()V" line-rate="1.00" branch-rate="1.00">
+                            <lines>
+                                <line number="43" hits="1" branch="false"/>
+                                <line number="42" hits="1" branch="false"/>
+                                <line number="43" hits="1" branch="false"/>
+                                <line number="43" hits="1" branch="false"/>
+                                <line number="42" hits="1" branch="false"/>
+                                <line number="43" hits="1" branch="false"/>
+                                <line number="43" hits="1" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="edu.indiana.soic.cs.utils/MyUtilsImpl/getMySQLArgs" signature="()V" line-rate="1.00" branch-rate="1.00">
+                            <lines>
+                                <line number="27" hits="1" branch="false"/>
+                                <line number="29" hits="1" branch="false"/>
+                                <line number="36" hits="1" branch="false"/>
+                                <line number="27" hits="1" branch="false"/>
+                                <line number="33" hits="1" branch="false"/>
+                                <line number="34" hits="1" branch="false"/>
+                                <line number="29" hits="1" branch="false"/>
+                                <line number="26" hits="1" branch="false"/>
+                                <line number="29" hits="1" branch="false"/>
+                                <line number="35" hits="1" branch="false"/>
+                                <line number="27" hits="1" branch="false"/>
+                                <line number="31" hits="1" branch="false"/>
+                                <line number="32" hits="1" branch="false"/>
+                                <line number="32" hits="1" branch="false"/>
+                                <line number="36" hits="1" branch="false"/>
+                                <line number="27" hits="1" branch="false"/>
+                                <line number="33" hits="1" branch="false"/>
+                                <line number="27" hits="1" branch="false"/>
+                                <line number="29" hits="1" branch="false"/>
+                                <line number="35" hits="1" branch="false"/>
+                                <line number="26" hits="1" branch="false"/>
+                                <line number="34" hits="1" branch="false"/>
+                                <line number="29" hits="1" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="edu.indiana.soic.cs.utils/MyUtilsImpl/getSparkArgs" signature="()V" line-rate="1.00" branch-rate="1.00">
+                            <lines>
+                                <line number="11" hits="1" branch="false"/>
+                                <line number="16" hits="1" branch="false"/>
+                                <line number="18" hits="1" branch="false"/>
+                                <line number="13" hits="1" branch="false"/>
+                                <line number="10" hits="1" branch="false"/>
+                                <line number="18" hits="1" branch="false"/>
+                                <line number="15" hits="1" branch="false"/>
+                                <line number="11" hits="1" branch="false"/>
+                                <line number="13" hits="1" branch="false"/>
+                                <line number="19" hits="1" branch="false"/>
+                                <line number="11" hits="1" branch="false"/>
+                                <line number="16" hits="1" branch="false"/>
+                                <line number="11" hits="1" branch="false"/>
+                                <line number="18" hits="1" branch="false"/>
+                                <line number="13" hits="1" branch="false"/>
+                                <line number="15" hits="1" branch="false"/>
+                                <line number="13" hits="1" branch="false"/>
+                                <line number="19" hits="1" branch="false"/>
+                                <line number="10" hits="1" branch="false"/>
+                                <line number="13" hits="1" branch="false"/>
+                                <line number="15" hits="1" branch="false"/>
+                                <line number="11" hits="1" branch="false"/>
+                            </lines>
+                        </method>
+                    </methods>
+                    <lines>
+                        <line number="27" hits="1" branch="false"/>
+                        <line number="29" hits="1" branch="false"/>
+                        <line number="36" hits="1" branch="false"/>
+                        <line number="43" hits="1" branch="false"/>
+                        <line number="11" hits="1" branch="false"/>
+                        <line number="16" hits="1" branch="false"/>
+                        <line number="18" hits="1" branch="false"/>
+                        <line number="13" hits="1" branch="false"/>
+                        <line number="42" hits="1" branch="false"/>
+                        <line number="27" hits="1" branch="false"/>
+                        <line number="10" hits="1" branch="false"/>
+                        <line number="33" hits="1" branch="false"/>
+                        <line number="18" hits="1" branch="false"/>
+                        <line number="15" hits="1" branch="false"/>
+                        <line number="11" hits="1" branch="false"/>
+                        <line number="34" hits="1" branch="false"/>
+                        <line number="29" hits="1" branch="false"/>
+                        <line number="13" hits="1" branch="false"/>
+                        <line number="19" hits="1" branch="false"/>
+                        <line number="43" hits="1" branch="false"/>
+                        <line number="11" hits="1" branch="false"/>
+                        <line number="43" hits="1" branch="false"/>
+                        <line number="16" hits="1" branch="false"/>
+                        <line number="11" hits="1" branch="false"/>
+                        <line number="26" hits="1" branch="false"/>
+                        <line number="29" hits="1" branch="false"/>
+                        <line number="35" hits="1" branch="false"/>
+                        <line number="27" hits="1" branch="false"/>
+                        <line number="18" hits="1" branch="false"/>
+                        <line number="31" hits="1" branch="false"/>
+                        <line number="32" hits="1" branch="false"/>
+                        <line number="13" hits="1" branch="false"/>
+                        <line number="32" hits="1" branch="false"/>
+                        <line number="36" hits="1" branch="false"/>
+                        <line number="15" hits="1" branch="false"/>
+                        <line number="27" hits="1" branch="false"/>
+                        <line number="13" hits="1" branch="false"/>
+                        <line number="19" hits="1" branch="false"/>
+                        <line number="33" hits="1" branch="false"/>
+                        <line number="42" hits="1" branch="false"/>
+                        <line number="27" hits="1" branch="false"/>
+                        <line number="10" hits="1" branch="false"/>
+                        <line number="13" hits="1" branch="false"/>
+                        <line number="29" hits="1" branch="false"/>
+                        <line number="15" hits="1" branch="false"/>
+                        <line number="35" hits="1" branch="false"/>
+                        <line number="43" hits="1" branch="false"/>
+                        <line number="26" hits="1" branch="false"/>
+                        <line number="11" hits="1" branch="false"/>
+                        <line number="34" hits="1" branch="false"/>
+                        <line number="29" hits="1" branch="false"/>
+                        <line number="43" hits="1" branch="false"/>
+                    </lines>
+</class>
+            </classes>
+        </package>
+    </packages>
+</coverage>

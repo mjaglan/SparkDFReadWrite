@@ -1,0 +1,249 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          src/main/scala/edu/indiana/soic/cs/utils/JsonUtil.scala.html
+        </title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
+        $(document).ready(function() {$(".tablesorter").tablesorter();});
+      </script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier;'>1 <span style=''>package edu.indiana.soic.cs.utils
+</span>2 <span style=''>/*
+</span>3 <span style=''> * SOURCE: https://coderwall.com/p/o--apg/easy-json-un-marshalling-in-scala-with-jackson
+</span>4 <span style=''> * */
+</span>5 <span style=''>import com.fasterxml.jackson.databind.{DeserializationFeature, ObjectMapper}
+</span>6 <span style=''>import com.fasterxml.jackson.module.scala.experimental.ScalaObjectMapper
+</span>7 <span style=''>import com.fasterxml.jackson.module.scala.DefaultScalaModule
+</span>8 <span style=''>
+</span>9 <span style=''>object JsonUtil {
+</span>10 <span style=''>  val mapper = </span><span style='background: #AEF1AE'>new</span><span style=''> ObjectMapper() with ScalaObjectMapper
+</span>11 <span style=''>  </span><span style='background: #AEF1AE'>mapper.registerModule(DefaultScalaModule)</span><span style=''>
+</span>12 <span style=''>  </span><span style='background: #AEF1AE'>mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)</span><span style=''>
+</span>13 <span style=''>
+</span>14 <span style=''>  def toMap[V](json:String)(implicit m: Manifest[V]) = </span><span style='background: #AEF1AE'>fromJson[Map[String,V]](json)</span><span style=''>
+</span>15 <span style=''>
+</span>16 <span style=''>  def fromJson[T](json: String)(implicit m : Manifest[T]): T = {
+</span>17 <span style=''>    </span><span style='background: #AEF1AE'>mapper.readValue[T](json)</span><span style=''>
+</span>18 <span style=''>  }
+</span>19 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line</th>
+        <th>Stmt Id</th>
+        <th>Pos</th>
+        <th>Tree</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr><tr>
+        <td>
+          10
+        </td>
+        <td>
+          104
+        </td>
+        <td>
+          377
+          -
+          380
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          edu.indiana.soic.cs.utils.JsonUtil.$anon.&lt;init&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          new $anon()
+        </td>
+      </tr><tr>
+        <td>
+          11
+        </td>
+        <td>
+          106
+        </td>
+        <td>
+          421
+          -
+          462
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.fasterxml.jackson.databind.ObjectMapper.registerModule
+        </td>
+        <td style="background: #AEF1AE">
+          JsonUtil.this.mapper.registerModule(com.fasterxml.jackson.module.scala.DefaultScalaModule)
+        </td>
+      </tr><tr>
+        <td>
+          11
+        </td>
+        <td>
+          105
+        </td>
+        <td>
+          443
+          -
+          461
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          com.fasterxml.jackson.module.scala.DefaultScalaModule
+        </td>
+        <td style="background: #AEF1AE">
+          com.fasterxml.jackson.module.scala.DefaultScalaModule
+        </td>
+      </tr><tr>
+        <td>
+          12
+        </td>
+        <td>
+          107
+        </td>
+        <td>
+          465
+          -
+          539
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.fasterxml.jackson.databind.ObjectMapper.configure
+        </td>
+        <td style="background: #AEF1AE">
+          JsonUtil.this.mapper.configure(FAIL_ON_UNKNOWN_PROPERTIES, false)
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          110
+        </td>
+        <td>
+          -1
+          -
+          -1
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.reflect.ManifestFactory.classType
+        </td>
+        <td style="background: #AEF1AE">
+          reflect.this.ManifestFactory.classType[Map[String,V]](classOf[scala.collection.immutable.Map], reflect.this.ManifestFactory.classType[String](classOf[java.lang.String]), m)
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          109
+        </td>
+        <td>
+          -1
+          -
+          -1
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.reflect.ManifestFactory.classType
+        </td>
+        <td style="background: #AEF1AE">
+          reflect.this.ManifestFactory.classType[String](classOf[java.lang.String])
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          108
+        </td>
+        <td>
+          -1
+          -
+          -1
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          classOf[scala.collection.immutable.Map]
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          111
+        </td>
+        <td>
+          596
+          -
+          625
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          edu.indiana.soic.cs.utils.JsonUtil.fromJson
+        </td>
+        <td style="background: #AEF1AE">
+          JsonUtil.this.fromJson[Map[String,V]](json)(reflect.this.ManifestFactory.classType[Map[String,V]](classOf[scala.collection.immutable.Map], reflect.this.ManifestFactory.classType[String](classOf[java.lang.String]), m))
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          112
+        </td>
+        <td>
+          696
+          -
+          721
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          com.fasterxml.jackson.module.scala.experimental.ScalaObjectMapper.readValue
+        </td>
+        <td style="background: #AEF1AE">
+          JsonUtil.this.mapper.readValue[T](json)(m)
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>

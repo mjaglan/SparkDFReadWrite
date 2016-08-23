@@ -1,0 +1,244 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          src/main/scala/edu/indiana/soic/cs/services/SparkEngineServiceImpl.scala.html
+        </title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
+        $(document).ready(function() {$(".tablesorter").tablesorter();});
+      </script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier;'>1 <span style=''>package edu.indiana.soic.cs.services
+</span>2 <span style=''>
+</span>3 <span style=''>import org.apache.spark._
+</span>4 <span style=''>import org.apache.spark.sql._
+</span>5 <span style=''>import edu.indiana.soic.cs.model._
+</span>6 <span style=''>
+</span>7 <span style=''>class SparkEngineServiceImpl extends SparkEngineService {
+</span>8 <span style=''>  def getSparkConf(confModel: SparkConfProps): SparkConf = {
+</span>9 <span style=''>    val sConf = </span><span style='background: #AEF1AE'>new SparkConf()
+</span>10 <span style=''></span><span style='background: #AEF1AE'>    .setAppName(confModel.appName)
+</span>11 <span style=''></span><span style='background: #AEF1AE'>    .setMaster(confModel.masterName)
+</span>12 <span style=''></span><span style='background: #AEF1AE'>    .set(confModel.multipleContexts(0), confModel.multipleContexts(1))</span><span style=''>
+</span>13 <span style=''>    
+</span>14 <span style=''>    sConf
+</span>15 <span style=''>  }
+</span>16 <span style=''>    
+</span>17 <span style=''>  def getApacheSparkContext(myConf: SparkConf): SparkContext = {
+</span>18 <span style=''>    val sc = </span><span style='background: #AEF1AE'>SparkContext.getOrCreate(myConf)</span><span style=''>
+</span>19 <span style=''>    
+</span>20 <span style=''>    sc
+</span>21 <span style=''>  }
+</span>22 <span style=''>  
+</span>23 <span style=''>  def getApacheSparkSQLContext(sc: SparkContext): SQLContext = {
+</span>24 <span style=''>    val ssc = </span><span style='background: #AEF1AE'>SQLContext.getOrCreate(sc)</span><span style=''>
+</span>25 <span style=''>    
+</span>26 <span style=''>    ssc
+</span>27 <span style=''>  }
+</span>28 <span style=''>  
+</span>29 <span style=''>  def makeDataframeFromJSON(ssc: SQLContext, filePath: String): DataFrame = {
+</span>30 <span style=''>    val df = </span><span style='background: #AEF1AE'>ssc.read.json(filePath)</span><span style=''>
+</span>31 <span style=''>    
+</span>32 <span style=''>    df
+</span>33 <span style=''>  }
+</span>34 <span style=''>  
+</span>35 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line</th>
+        <th>Stmt Id</th>
+        <th>Pos</th>
+        <th>Tree</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr><tr>
+        <td>
+          10
+        </td>
+        <td>
+          96
+        </td>
+        <td>
+          297
+          -
+          314
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          edu.indiana.soic.cs.model.SparkConfProps.appName
+        </td>
+        <td style="background: #AEF1AE">
+          confModel.appName
+        </td>
+      </tr><tr>
+        <td>
+          11
+        </td>
+        <td>
+          97
+        </td>
+        <td>
+          331
+          -
+          351
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          edu.indiana.soic.cs.model.SparkConfProps.masterName
+        </td>
+        <td style="background: #AEF1AE">
+          confModel.masterName
+        </td>
+      </tr><tr>
+        <td>
+          12
+        </td>
+        <td>
+          98
+        </td>
+        <td>
+          362
+          -
+          391
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Array.apply
+        </td>
+        <td style="background: #AEF1AE">
+          confModel.multipleContexts.apply(0)
+        </td>
+      </tr><tr>
+        <td>
+          12
+        </td>
+        <td>
+          100
+        </td>
+        <td>
+          265
+          -
+          423
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          org.apache.spark.SparkConf.set
+        </td>
+        <td style="background: #AEF1AE">
+          new org.apache.spark.SparkConf().setAppName(confModel.appName).setMaster(confModel.masterName).set(confModel.multipleContexts.apply(0), confModel.multipleContexts.apply(1))
+        </td>
+      </tr><tr>
+        <td>
+          12
+        </td>
+        <td>
+          99
+        </td>
+        <td>
+          393
+          -
+          422
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Array.apply
+        </td>
+        <td style="background: #AEF1AE">
+          confModel.multipleContexts.apply(1)
+        </td>
+      </tr><tr>
+        <td>
+          18
+        </td>
+        <td>
+          101
+        </td>
+        <td>
+          526
+          -
+          558
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          org.apache.spark.SparkContext.getOrCreate
+        </td>
+        <td style="background: #AEF1AE">
+          org.apache.spark.SparkContext.getOrCreate(myConf)
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          102
+        </td>
+        <td>
+          657
+          -
+          683
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          org.apache.spark.sql.SQLContext.getOrCreate
+        </td>
+        <td style="background: #AEF1AE">
+          org.apache.spark.sql.SQLContext.getOrCreate(sc)
+        </td>
+      </tr><tr>
+        <td>
+          30
+        </td>
+        <td>
+          103
+        </td>
+        <td>
+          795
+          -
+          818
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          org.apache.spark.sql.DataFrameReader.json
+        </td>
+        <td style="background: #AEF1AE">
+          ssc.read.json(filePath)
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>

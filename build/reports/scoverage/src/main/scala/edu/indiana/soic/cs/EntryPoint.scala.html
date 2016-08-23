@@ -1,0 +1,1486 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          src/main/scala/edu/indiana/soic/cs/EntryPoint.scala.html
+        </title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
+        $(document).ready(function() {$(".tablesorter").tablesorter();});
+      </script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier;'>1 <span style=''>package edu.indiana.soic.cs
+</span>2 <span style=''>
+</span>3 <span style=''>import edu.indiana.soic.cs.model._
+</span>4 <span style=''>import edu.indiana.soic.cs.services._
+</span>5 <span style=''>import edu.indiana.soic.cs.utils._
+</span>6 <span style=''>import org.apache.log4j.Logger
+</span>7 <span style=''>import org.apache.log4j.Level
+</span>8 <span style=''>
+</span>9 <span style=''>object EntryPoint extends App {
+</span>10 <span style=''>  </span><span style='background: #AEF1AE'>println("*** Entry Point ***")</span><span style=''>
+</span>11 <span style=''>  
+</span>12 <span style=''>  // Let's have cleaner console :-)
+</span>13 <span style=''>  </span><span style='background: #AEF1AE'>Logger.getLogger("org").setLevel(Level.ERROR)</span><span style=''>
+</span>14 <span style=''>  </span><span style='background: #AEF1AE'>Logger.getLogger("akka").setLevel(Level.ERROR)</span><span style=''>
+</span>15 <span style=''>
+</span>16 <span style=''>  // override input args
+</span>17 <span style=''>  var inputFileName = </span><span style='background: #AEF1AE'>"./resources/main/input.json"</span><span style=''>
+</span>18 <span style=''>  if (</span><span style='background: #AEF1AE'>args.length == 1</span><span style=''>) {
+</span>19 <span style=''>    </span><span style='background: #AEF1AE'>inputFileName = args(0)</span><span style=''>
+</span>20 <span style=''>  }
+</span>21 <span style=''>  
+</span>22 <span style=''>  // Print runtime arguments
+</span>23 <span style=''>  val inputController = </span><span style='background: #AEF1AE'>new MyUtilsImpl</span><span style=''>
+</span>24 <span style=''>  val inputMap = </span><span style='background: #AEF1AE'>inputController.getInputArgs(inputFileName)</span><span style=''>
+</span>25 <span style=''>  </span><span style='background: #AEF1AE'>inputMap.keySet.foreach { x => println(x + " : " + inputMap.get(x).get) }</span><span style=''>
+</span>26 <span style=''>  
+</span>27 <span style=''>  // get mysql props model
+</span>28 <span style=''>  val mysqlProp = </span><span style='background: #AEF1AE'>inputController.getMySQLArgs(inputMap.get("dbArgsFileName").get)</span><span style=''>
+</span>29 <span style=''>  
+</span>30 <span style=''>  // get spark conf props model
+</span>31 <span style=''>  val sparkConfProps = </span><span style='background: #AEF1AE'>inputController.getSparkArgs(inputMap.get("sparkArgsFileName").get)</span><span style=''>
+</span>32 <span style=''>                             
+</span>33 <span style=''>  // get Spark Engine
+</span>34 <span style=''>  var ses = </span><span style='background: #AEF1AE'>new SparkEngineServiceImpl</span><span style=''>
+</span>35 <span style=''>  
+</span>36 <span style=''>  // Get SparkConf
+</span>37 <span style=''>  val sConf = </span><span style='background: #AEF1AE'>ses.getSparkConf(sparkConfProps)</span><span style=''>
+</span>38 <span style=''>  
+</span>39 <span style=''>  // Get SparkContext
+</span>40 <span style=''>  val sc = </span><span style='background: #AEF1AE'>ses.getApacheSparkContext(sConf)</span><span style=''>
+</span>41 <span style=''>  
+</span>42 <span style=''>  // Get SparkSQLContext
+</span>43 <span style=''>  val ssc = </span><span style='background: #AEF1AE'>ses.getApacheSparkSQLContext(sc)</span><span style=''>
+</span>44 <span style=''>
+</span>45 <span style=''>  // Get MySQL Connection
+</span>46 <span style=''>  val sqlC = </span><span style='background: #AEF1AE'>new MySQLConnectionServiceImpl</span><span style=''>
+</span>47 <span style=''>  
+</span>48 <span style=''>  // if (write): writeDF
+</span>49 <span style=''>  if (</span><span style='background: #AEF1AE'>inputMap.get("write").get == "true"</span><span style=''>) </span><span style='background: #AEF1AE'>{
+</span>50 <span style=''></span><span style='background: #AEF1AE'>    // Make DataFrame
+</span>51 <span style=''></span><span style='background: #AEF1AE'>    val df = ses.makeDataframeFromJSON(ssc, "./resources/main/record.json")
+</span>52 <span style=''></span><span style='background: #AEF1AE'>    
+</span>53 <span style=''></span><span style='background: #AEF1AE'>    val feedBack = sqlC.writeDF(ssc, mysqlProp, df, inputMap.get("tableName").get)
+</span>54 <span style=''></span><span style='background: #AEF1AE'>    
+</span>55 <span style=''></span><span style='background: #AEF1AE'>    if (feedBack) {
+</span>56 <span style=''></span><span style='background: #AEF1AE'>      println("Successfully written all data which looks like =>")
+</span>57 <span style=''></span><span style='background: #AEF1AE'>      df.show(5, true)
+</span>58 <span style=''></span><span style='background: #AEF1AE'>      
+</span>59 <span style=''></span><span style='background: #AEF1AE'>    } else {
+</span>60 <span style=''></span><span style='background: #AEF1AE'>      println("Failed to write to DB!")
+</span>61 <span style=''></span><span style='background: #AEF1AE'>    }
+</span>62 <span style=''></span><span style='background: #AEF1AE'>    
+</span>63 <span style=''></span><span style='background: #AEF1AE'>  }</span><span style=''> else </span><span style='background: #AEF1AE'>{
+</span>64 <span style=''></span><span style='background: #AEF1AE'>    
+</span>65 <span style=''></span><span style='background: #AEF1AE'>    // else(read): readDF
+</span>66 <span style=''></span><span style='background: #AEF1AE'>    val newDf = sqlC.readDF(ssc, mysqlProp, inputMap.get("query").get)
+</span>67 <span style=''></span><span style='background: #AEF1AE'>    if (newDf != null) {
+</span>68 <span style=''></span><span style='background: #AEF1AE'>      println("Total "+ newDf.count() + " records fetched which looks like =>")
+</span>69 <span style=''></span><span style='background: #AEF1AE'>      newDf.show(5, true) 
+</span>70 <span style=''></span><span style='background: #AEF1AE'>      
+</span>71 <span style=''></span><span style='background: #AEF1AE'>    } else {
+</span>72 <span style=''></span><span style='background: #AEF1AE'>      println("Failed to read from DB!")
+</span>73 <span style=''></span><span style='background: #AEF1AE'>    }
+</span>74 <span style=''></span><span style='background: #AEF1AE'>    
+</span>75 <span style=''></span><span style='background: #AEF1AE'>  }</span><span style=''>
+</span>76 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line</th>
+        <th>Stmt Id</th>
+        <th>Pos</th>
+        <th>Tree</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr><tr>
+        <td>
+          10
+        </td>
+        <td>
+          1
+        </td>
+        <td>
+          233
+          -
+          263
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td style="background: #AEF1AE">
+          scala.this.Predef.println(&quot;*** Entry Point ***&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          13
+        </td>
+        <td>
+          2
+        </td>
+        <td>
+          322
+          -
+          327
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;org&quot;
+        </td>
+      </tr><tr>
+        <td>
+          13
+        </td>
+        <td>
+          4
+        </td>
+        <td>
+          305
+          -
+          350
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          org.apache.log4j.Category.setLevel
+        </td>
+        <td style="background: #AEF1AE">
+          org.apache.log4j.Logger.getLogger(&quot;org&quot;).setLevel(org.apache.log4j.Level.ERROR)
+        </td>
+      </tr><tr>
+        <td>
+          13
+        </td>
+        <td>
+          3
+        </td>
+        <td>
+          338
+          -
+          349
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          org.apache.log4j.Level.ERROR
+        </td>
+        <td style="background: #AEF1AE">
+          org.apache.log4j.Level.ERROR
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          5
+        </td>
+        <td>
+          370
+          -
+          376
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;akka&quot;
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          7
+        </td>
+        <td>
+          353
+          -
+          399
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          org.apache.log4j.Category.setLevel
+        </td>
+        <td style="background: #AEF1AE">
+          org.apache.log4j.Logger.getLogger(&quot;akka&quot;).setLevel(org.apache.log4j.Level.ERROR)
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          6
+        </td>
+        <td>
+          387
+          -
+          398
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          org.apache.log4j.Level.ERROR
+        </td>
+        <td style="background: #AEF1AE">
+          org.apache.log4j.Level.ERROR
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          8
+        </td>
+        <td>
+          448
+          -
+          477
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;./resources/main/input.json&quot;
+        </td>
+      </tr><tr>
+        <td>
+          18
+        </td>
+        <td>
+          14
+        </td>
+        <td>
+          -1
+          -
+          -1
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          ()
+        </td>
+      </tr><tr>
+        <td>
+          18
+        </td>
+        <td>
+          13
+        </td>
+        <td>
+          -1
+          -
+          -1
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          ()
+        </td>
+      </tr><tr>
+        <td>
+          18
+        </td>
+        <td>
+          9
+        </td>
+        <td>
+          484
+          -
+          500
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Int.==
+        </td>
+        <td style="background: #AEF1AE">
+          EntryPoint.this.args.length.==(1)
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          11
+        </td>
+        <td>
+          508
+          -
+          531
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          edu.indiana.soic.cs.EntryPoint.inputFileName_=
+        </td>
+        <td style="background: #AEF1AE">
+          EntryPoint.this.inputFileName_=(EntryPoint.this.args.apply(0))
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          10
+        </td>
+        <td>
+          524
+          -
+          531
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Array.apply
+        </td>
+        <td style="background: #AEF1AE">
+          EntryPoint.this.args.apply(0)
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          12
+        </td>
+        <td>
+          508
+          -
+          531
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          edu.indiana.soic.cs.EntryPoint.inputFileName_=
+        </td>
+        <td style="background: #AEF1AE">
+          EntryPoint.this.inputFileName_=(EntryPoint.this.args.apply(0))
+        </td>
+      </tr><tr>
+        <td>
+          23
+        </td>
+        <td>
+          15
+        </td>
+        <td>
+          592
+          -
+          607
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          edu.indiana.soic.cs.utils.MyUtilsImpl.&lt;init&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          new edu.indiana.soic.cs.utils.MyUtilsImpl()
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          17
+        </td>
+        <td>
+          625
+          -
+          668
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          edu.indiana.soic.cs.utils.MyUtilsImpl.getInputArgs
+        </td>
+        <td style="background: #AEF1AE">
+          EntryPoint.this.inputController.getInputArgs(EntryPoint.this.inputFileName)
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          16
+        </td>
+        <td>
+          654
+          -
+          667
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          edu.indiana.soic.cs.EntryPoint.inputFileName
+        </td>
+        <td style="background: #AEF1AE">
+          EntryPoint.this.inputFileName
+        </td>
+      </tr><tr>
+        <td>
+          25
+        </td>
+        <td>
+          20
+        </td>
+        <td>
+          710
+          -
+          741
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.lang.String.+
+        </td>
+        <td style="background: #AEF1AE">
+          x.+(&quot; : &quot;).+(EntryPoint.this.inputMap.get(x).get)
+        </td>
+      </tr><tr>
+        <td>
+          25
+        </td>
+        <td>
+          22
+        </td>
+        <td>
+          671
+          -
+          744
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.IterableLike.foreach
+        </td>
+        <td style="background: #AEF1AE">
+          EntryPoint.this.inputMap.keySet.foreach[Unit](((x: String) =&gt; scala.this.Predef.println(x.+(&quot; : &quot;).+(EntryPoint.this.inputMap.get(x).get))))
+        </td>
+      </tr><tr>
+        <td>
+          25
+        </td>
+        <td>
+          19
+        </td>
+        <td>
+          722
+          -
+          741
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.Option.get
+        </td>
+        <td style="background: #AEF1AE">
+          EntryPoint.this.inputMap.get(x).get
+        </td>
+      </tr><tr>
+        <td>
+          25
+        </td>
+        <td>
+          18
+        </td>
+        <td>
+          714
+          -
+          719
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot; : &quot;
+        </td>
+      </tr><tr>
+        <td>
+          25
+        </td>
+        <td>
+          21
+        </td>
+        <td>
+          702
+          -
+          742
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td style="background: #AEF1AE">
+          scala.this.Predef.println(x.+(&quot; : &quot;).+(EntryPoint.this.inputMap.get(x).get))
+        </td>
+      </tr><tr>
+        <td>
+          28
+        </td>
+        <td>
+          23
+        </td>
+        <td>
+          835
+          -
+          851
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;dbArgsFileName&quot;
+        </td>
+      </tr><tr>
+        <td>
+          28
+        </td>
+        <td>
+          25
+        </td>
+        <td>
+          793
+          -
+          857
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          edu.indiana.soic.cs.utils.MyUtilsImpl.getMySQLArgs
+        </td>
+        <td style="background: #AEF1AE">
+          EntryPoint.this.inputController.getMySQLArgs(EntryPoint.this.inputMap.get(&quot;dbArgsFileName&quot;).get)
+        </td>
+      </tr><tr>
+        <td>
+          28
+        </td>
+        <td>
+          24
+        </td>
+        <td>
+          822
+          -
+          856
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.Option.get
+        </td>
+        <td style="background: #AEF1AE">
+          EntryPoint.this.inputMap.get(&quot;dbArgsFileName&quot;).get
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          26
+        </td>
+        <td>
+          958
+          -
+          977
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;sparkArgsFileName&quot;
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          28
+        </td>
+        <td>
+          916
+          -
+          983
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          edu.indiana.soic.cs.utils.MyUtilsImpl.getSparkArgs
+        </td>
+        <td style="background: #AEF1AE">
+          EntryPoint.this.inputController.getSparkArgs(EntryPoint.this.inputMap.get(&quot;sparkArgsFileName&quot;).get)
+        </td>
+      </tr><tr>
+        <td>
+          31
+        </td>
+        <td>
+          27
+        </td>
+        <td>
+          945
+          -
+          982
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.Option.get
+        </td>
+        <td style="background: #AEF1AE">
+          EntryPoint.this.inputMap.get(&quot;sparkArgsFileName&quot;).get
+        </td>
+      </tr><tr>
+        <td>
+          34
+        </td>
+        <td>
+          29
+        </td>
+        <td>
+          1048
+          -
+          1074
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          edu.indiana.soic.cs.services.SparkEngineServiceImpl.&lt;init&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          new edu.indiana.soic.cs.services.SparkEngineServiceImpl()
+        </td>
+      </tr><tr>
+        <td>
+          37
+        </td>
+        <td>
+          31
+        </td>
+        <td>
+          1111
+          -
+          1143
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          edu.indiana.soic.cs.services.SparkEngineServiceImpl.getSparkConf
+        </td>
+        <td style="background: #AEF1AE">
+          EntryPoint.this.ses.getSparkConf(EntryPoint.this.sparkConfProps)
+        </td>
+      </tr><tr>
+        <td>
+          37
+        </td>
+        <td>
+          30
+        </td>
+        <td>
+          1128
+          -
+          1142
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          edu.indiana.soic.cs.EntryPoint.sparkConfProps
+        </td>
+        <td style="background: #AEF1AE">
+          EntryPoint.this.sparkConfProps
+        </td>
+      </tr><tr>
+        <td>
+          40
+        </td>
+        <td>
+          32
+        </td>
+        <td>
+          1206
+          -
+          1211
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          edu.indiana.soic.cs.EntryPoint.sConf
+        </td>
+        <td style="background: #AEF1AE">
+          EntryPoint.this.sConf
+        </td>
+      </tr><tr>
+        <td>
+          40
+        </td>
+        <td>
+          33
+        </td>
+        <td>
+          1180
+          -
+          1212
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          edu.indiana.soic.cs.services.SparkEngineServiceImpl.getApacheSparkContext
+        </td>
+        <td style="background: #AEF1AE">
+          EntryPoint.this.ses.getApacheSparkContext(EntryPoint.this.sConf)
+        </td>
+      </tr><tr>
+        <td>
+          43
+        </td>
+        <td>
+          35
+        </td>
+        <td>
+          1253
+          -
+          1285
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          edu.indiana.soic.cs.services.SparkEngineServiceImpl.getApacheSparkSQLContext
+        </td>
+        <td style="background: #AEF1AE">
+          EntryPoint.this.ses.getApacheSparkSQLContext(EntryPoint.this.sc)
+        </td>
+      </tr><tr>
+        <td>
+          43
+        </td>
+        <td>
+          34
+        </td>
+        <td>
+          1282
+          -
+          1284
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          edu.indiana.soic.cs.EntryPoint.sc
+        </td>
+        <td style="background: #AEF1AE">
+          EntryPoint.this.sc
+        </td>
+      </tr><tr>
+        <td>
+          46
+        </td>
+        <td>
+          36
+        </td>
+        <td>
+          1326
+          -
+          1356
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          edu.indiana.soic.cs.services.MySQLConnectionServiceImpl.&lt;init&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          new edu.indiana.soic.cs.services.MySQLConnectionServiceImpl()
+        </td>
+      </tr><tr>
+        <td>
+          49
+        </td>
+        <td>
+          37
+        </td>
+        <td>
+          1391
+          -
+          1426
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.lang.Object.==
+        </td>
+        <td style="background: #AEF1AE">
+          EntryPoint.this.inputMap.get(&quot;write&quot;).get.==(&quot;true&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          49
+        </td>
+        <td>
+          51
+        </td>
+        <td>
+          1428
+          -
+          1805
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          {
+  val df: org.apache.spark.sql.DataFrame = EntryPoint.this.ses.makeDataframeFromJSON(EntryPoint.this.ssc, &quot;./resources/main/record.json&quot;);
+  val feedBack: Boolean = EntryPoint.this.sqlC.writeDF(EntryPoint.this.ssc, EntryPoint.this.mysqlProp, df, EntryPoint.this.inputMap.get(&quot;tableName&quot;).get);
+  if (feedBack)
+    {
+      scala.this.Predef.println(&quot;Successfully written all data which looks like =&gt;&quot;);
+      df.show(5, true)
+    }
+  else
+    scala.this.Predef.println(&quot;Failed to write to DB!&quot;)
+}
+        </td>
+      </tr><tr>
+        <td>
+          51
+        </td>
+        <td>
+          38
+        </td>
+        <td>
+          1491
+          -
+          1494
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          edu.indiana.soic.cs.EntryPoint.ssc
+        </td>
+        <td style="background: #AEF1AE">
+          EntryPoint.this.ssc
+        </td>
+      </tr><tr>
+        <td>
+          51
+        </td>
+        <td>
+          40
+        </td>
+        <td>
+          1465
+          -
+          1527
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          edu.indiana.soic.cs.services.SparkEngineServiceImpl.makeDataframeFromJSON
+        </td>
+        <td style="background: #AEF1AE">
+          EntryPoint.this.ses.makeDataframeFromJSON(EntryPoint.this.ssc, &quot;./resources/main/record.json&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          51
+        </td>
+        <td>
+          39
+        </td>
+        <td>
+          1496
+          -
+          1526
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;./resources/main/record.json&quot;
+        </td>
+      </tr><tr>
+        <td>
+          53
+        </td>
+        <td>
+          41
+        </td>
+        <td>
+          1565
+          -
+          1568
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          edu.indiana.soic.cs.EntryPoint.ssc
+        </td>
+        <td style="background: #AEF1AE">
+          EntryPoint.this.ssc
+        </td>
+      </tr><tr>
+        <td>
+          53
+        </td>
+        <td>
+          44
+        </td>
+        <td>
+          1585
+          -
+          1614
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.Option.get
+        </td>
+        <td style="background: #AEF1AE">
+          EntryPoint.this.inputMap.get(&quot;tableName&quot;).get
+        </td>
+      </tr><tr>
+        <td>
+          53
+        </td>
+        <td>
+          43
+        </td>
+        <td>
+          1598
+          -
+          1609
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;tableName&quot;
+        </td>
+      </tr><tr>
+        <td>
+          53
+        </td>
+        <td>
+          45
+        </td>
+        <td>
+          1552
+          -
+          1615
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          edu.indiana.soic.cs.services.MySQLConnectionServiceImpl.writeDF
+        </td>
+        <td style="background: #AEF1AE">
+          EntryPoint.this.sqlC.writeDF(EntryPoint.this.ssc, EntryPoint.this.mysqlProp, df, EntryPoint.this.inputMap.get(&quot;tableName&quot;).get)
+        </td>
+      </tr><tr>
+        <td>
+          53
+        </td>
+        <td>
+          42
+        </td>
+        <td>
+          1570
+          -
+          1579
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          edu.indiana.soic.cs.EntryPoint.mysqlProp
+        </td>
+        <td style="background: #AEF1AE">
+          EntryPoint.this.mysqlProp
+        </td>
+      </tr><tr>
+        <td>
+          55
+        </td>
+        <td>
+          48
+        </td>
+        <td>
+          1639
+          -
+          1743
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          {
+  scala.this.Predef.println(&quot;Successfully written all data which looks like =&gt;&quot;);
+  df.show(5, true)
+}
+        </td>
+      </tr><tr>
+        <td>
+          56
+        </td>
+        <td>
+          46
+        </td>
+        <td>
+          1647
+          -
+          1707
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td style="background: #AEF1AE">
+          scala.this.Predef.println(&quot;Successfully written all data which looks like =&gt;&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          57
+        </td>
+        <td>
+          47
+        </td>
+        <td>
+          1714
+          -
+          1730
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          org.apache.spark.sql.DataFrame.show
+        </td>
+        <td style="background: #AEF1AE">
+          df.show(5, true)
+        </td>
+      </tr><tr>
+        <td>
+          60
+        </td>
+        <td>
+          50
+        </td>
+        <td>
+          1757
+          -
+          1790
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td style="background: #AEF1AE">
+          scala.this.Predef.println(&quot;Failed to write to DB!&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          60
+        </td>
+        <td>
+          49
+        </td>
+        <td>
+          1757
+          -
+          1790
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td style="background: #AEF1AE">
+          scala.this.Predef.println(&quot;Failed to write to DB!&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          63
+        </td>
+        <td>
+          64
+        </td>
+        <td>
+          1811
+          -
+          2122
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          {
+  val newDf: org.apache.spark.sql.DataFrame = EntryPoint.this.sqlC.readDF(EntryPoint.this.ssc, EntryPoint.this.mysqlProp, EntryPoint.this.inputMap.get(&quot;query&quot;).get);
+  if (newDf.!=(null))
+    {
+      scala.this.Predef.println(&quot;Total &quot;.+(newDf.count()).+(&quot; records fetched which looks like =&gt;&quot;));
+      newDf.show(5, true)
+    }
+  else
+    scala.this.Predef.println(&quot;Failed to read from DB!&quot;)
+}
+        </td>
+      </tr><tr>
+        <td>
+          66
+        </td>
+        <td>
+          53
+        </td>
+        <td>
+          1877
+          -
+          1886
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          edu.indiana.soic.cs.EntryPoint.mysqlProp
+        </td>
+        <td style="background: #AEF1AE">
+          EntryPoint.this.mysqlProp
+        </td>
+      </tr><tr>
+        <td>
+          66
+        </td>
+        <td>
+          56
+        </td>
+        <td>
+          1860
+          -
+          1914
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          edu.indiana.soic.cs.services.MySQLConnectionServiceImpl.readDF
+        </td>
+        <td style="background: #AEF1AE">
+          EntryPoint.this.sqlC.readDF(EntryPoint.this.ssc, EntryPoint.this.mysqlProp, EntryPoint.this.inputMap.get(&quot;query&quot;).get)
+        </td>
+      </tr><tr>
+        <td>
+          66
+        </td>
+        <td>
+          55
+        </td>
+        <td>
+          1888
+          -
+          1913
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.Option.get
+        </td>
+        <td style="background: #AEF1AE">
+          EntryPoint.this.inputMap.get(&quot;query&quot;).get
+        </td>
+      </tr><tr>
+        <td>
+          66
+        </td>
+        <td>
+          52
+        </td>
+        <td>
+          1872
+          -
+          1875
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          edu.indiana.soic.cs.EntryPoint.ssc
+        </td>
+        <td style="background: #AEF1AE">
+          EntryPoint.this.ssc
+        </td>
+      </tr><tr>
+        <td>
+          66
+        </td>
+        <td>
+          54
+        </td>
+        <td>
+          1901
+          -
+          1908
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;query&quot;
+        </td>
+      </tr><tr>
+        <td>
+          67
+        </td>
+        <td>
+          61
+        </td>
+        <td>
+          1938
+          -
+          2059
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          {
+  scala.this.Predef.println(&quot;Total &quot;.+(newDf.count()).+(&quot; records fetched which looks like =&gt;&quot;));
+  newDf.show(5, true)
+}
+        </td>
+      </tr><tr>
+        <td>
+          67
+        </td>
+        <td>
+          57
+        </td>
+        <td>
+          1923
+          -
+          1936
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.lang.Object.!=
+        </td>
+        <td style="background: #AEF1AE">
+          newDf.!=(null)
+        </td>
+      </tr><tr>
+        <td>
+          68
+        </td>
+        <td>
+          59
+        </td>
+        <td>
+          1946
+          -
+          2019
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td style="background: #AEF1AE">
+          scala.this.Predef.println(&quot;Total &quot;.+(newDf.count()).+(&quot; records fetched which looks like =&gt;&quot;))
+        </td>
+      </tr><tr>
+        <td>
+          68
+        </td>
+        <td>
+          58
+        </td>
+        <td>
+          1954
+          -
+          2018
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.lang.String.+
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;Total &quot;.+(newDf.count()).+(&quot; records fetched which looks like =&gt;&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          69
+        </td>
+        <td>
+          60
+        </td>
+        <td>
+          2026
+          -
+          2045
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          org.apache.spark.sql.DataFrame.show
+        </td>
+        <td style="background: #AEF1AE">
+          newDf.show(5, true)
+        </td>
+      </tr><tr>
+        <td>
+          72
+        </td>
+        <td>
+          62
+        </td>
+        <td>
+          2073
+          -
+          2107
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td style="background: #AEF1AE">
+          scala.this.Predef.println(&quot;Failed to read from DB!&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          72
+        </td>
+        <td>
+          63
+        </td>
+        <td>
+          2073
+          -
+          2107
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td style="background: #AEF1AE">
+          scala.this.Predef.println(&quot;Failed to read from DB!&quot;)
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>

@@ -68,9 +68,11 @@ jarScoverage
     This is because ```useAnt``` support is removed from Gradle 3.0 onwards. So prefer sticiking to 2.14 version.
 - Setup MySQL server as mentioned below separately
 - Run any of the above mentioned gradle tasks, for example, run any one of the following line - 
-    ```gradle
+    ```bash
     gradle build
+    
     gradle test
+    
     gradle checkScoverage
     ```
 

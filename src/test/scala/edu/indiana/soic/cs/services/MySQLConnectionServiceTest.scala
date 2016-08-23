@@ -19,12 +19,11 @@ class MySQLConnectionServiceTest extends FunSuite {
   val dbc = new MySQLConnectionServiceImpl
   val sc = SparkContext.getOrCreate(new SparkConf().setAppName("unit-test").setMaster("local[*]"))
   val ssc = SQLContext.getOrCreate(sc)
-  val mysqlProp = MySQLProps(     "mayank.jaglan",  
-                                   "Welltok1!",
-                                   "localhost",
-                                   "3306",
-                                   "db1")
-   val prop = new Properties()
+  val myUtilsObj = new MyUtilsImpl
+  val mysqlProp = myUtilsObj.getMySQLArgs()
+
+    
+  val prop = new Properties()
       prop.setProperty("user", mysqlProp.userName)
       prop.setProperty("password", mysqlProp.password)
       prop.setProperty("driver", "com.mysql.jdbc.Driver")

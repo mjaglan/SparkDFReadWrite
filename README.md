@@ -1,5 +1,6 @@
 A demo project which will Read and Write a dataframe to MySQL DB. 
 
+<br>
 
 ##Build System  (![Gradle](https://discuss.gradle.org/t/gradle-2-14-1-released/18550))
 
@@ -34,7 +35,27 @@ checkScoverage
 jarScoverage
 ```
 
+<br><br>
 
+##Input Resources
+- Common Resources
+
+  - ![record.json](resources/main/record.json)
+  - ![dbArgs.json](resources/main/dbArgs.json)
+  - ![sparkArgs.json](resources/main/sparkArgs.json)
+
+- For ```src/main/``` specific
+
+  - ![input.json](resources/main/input.json)
+
+- For ```src/test/``` specific
+
+  - ![testInput1.json](resources/main/testInput1.json)
+  - ![testInput1.fail.json](resources/main/testInput1.fail.json)
+  - ![testInput2.json](resources/main/testInput2.json)
+  - ![testInput2.fail.json](resources/main/testInput2.fail.json)
+
+<br><br>
 
 ##How to run?
 - Install Gradle 2.14 Build Tool (click ![here](https://www.javacodegeeks.com/2013/04/how-to-install-gradle-2.html) for reference)
@@ -53,6 +74,7 @@ jarScoverage
     gradle checkScoverage
     ```
 
+<br><br>
 
 ##How to setup MYSQL DB?
 - Install MySQL (for example like ![this](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-14-04))
@@ -62,16 +84,16 @@ jarScoverage
 - Create a simple SQL table (like ![this](http://www.w3schools.com/sql/sql_autoincrement.asp))
 - Update following JSON file with MySQL login details: ![dbArgs.json](resources/main/dbArgs.json)
 
-
-
+<br><br>
 
 ##Scala Unit Tests   (![ScalaTest Tool](http://www.scalatest.org/about))
 ![Scala Unit Testing Report](resources/images/test.summary.png)
 The above shown unit testing report is present at location ![build/reports/tests/](build/reports/tests/)
 
+<br><br><br>
 
 ##Scala Code Coverage  (![SCoverage Tool](http://scoverage.org/))
 ![Scala Code Coverage Report](resources/images/reportScoverage.png)
 The above shown code coverage report is present at location ![build/reports/scoverage/](build/reports/scoverage/)
 
-
+<br><br><br>

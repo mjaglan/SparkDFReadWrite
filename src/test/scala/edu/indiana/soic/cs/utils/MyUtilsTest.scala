@@ -4,7 +4,14 @@ import org.junit.runner._
 import org.scalatest._
 import org.scalatest.junit._
 
+/*
+ * NOTE: ScalaTest's normal approach for running suites of tests in parallel is to run 
+ * different suites in parallel, but the tests of any one suite sequentially.
+ * 
+ * Source: http://doc.scalatest.org/2.2.4/index.html#org.scalatest.ParallelTestExecution
+ * */
 
+// One test suite
 @RunWith(classOf[JUnitRunner])
 class MyUtilsTest extends FunSuite {
   trait TestSets {

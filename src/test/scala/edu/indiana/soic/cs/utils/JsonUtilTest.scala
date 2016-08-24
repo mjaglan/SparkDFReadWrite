@@ -6,6 +6,14 @@ import org.scalatest.junit._
 import org.scalamock._
 import org.scalamock.scalatest._
 
+/*
+ * NOTE: ScalaTest's normal approach for running suites of tests in parallel is to run 
+ * different suites in parallel, but the tests of any one suite sequentially.
+ * 
+ * Source: http://doc.scalatest.org/2.2.4/index.html#org.scalatest.ParallelTestExecution
+ * */
+
+// One test suite
 @RunWith(classOf[JUnitRunner])
 class JsonUtilTest extends FunSuite {
   trait TestSets {
